@@ -1,7 +1,7 @@
 """Regenerate every result, figure, number and video from scratch.
 
 Usage: python scripts/run_all.py [--clean]   (--clean first deletes results/, figures/, videos/ and the
-trial cache, so everything, including both report PDFs, is rebuilt from the papers and the authors' raw data.)
+trial cache, so everything, including report/report_paper_style.pdf, is rebuilt from the papers and the authors' raw data.)
 """
 import os
 import shutil
@@ -29,8 +29,7 @@ if __name__ == '__main__':
                        stdout=open(ROOT / 'results' / f'log_{Path(step).stem}.txt', 'w'),
                        env={**os.environ, 'MPLBACKEND': 'Agg'})   # figures are saved, never shown
         if step == 'collect_numbers.py':   # build the report as soon as numbers.tex exists
-            for tex, pdf in (('main', 'report'), ('paper', 'report_paper_style')):
-                subprocess.run(['latexmk', '-pdf', '-interaction=nonstopmode', '-silent', f'{tex}.tex'],
-                               cwd=ROOT / 'report', check=True, stdout=subprocess.DEVNULL)
-                shutil.copy(ROOT / f'report/{tex}.pdf', ROOT / f'report/{pdf}.pdf')
+            subprocess.run(['latexmk', '-pdf', '-interaction=nonstopmode', '-silent', 'paper.tex'],
+                           cwd=ROOT / 'report', check=True, stdout=subprocess.DEVNULL)
+            shutil.copy(ROOT / 'report/paper.pdf', ROOT / 'report/report_paper_style.pdf')
     print('all steps finished')

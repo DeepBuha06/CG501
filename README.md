@@ -7,7 +7,7 @@ are noisy, and slow motion is more likely than fast. I rebuilt that estimator, w
 images (it becomes a line fit with a slow-motion prior), and tested it in a simulation of the Salles, Diebold
 & Moss (2020) bat experiment and on their public head-tracking data.
 
-Report: [`report/report.pdf`](report/report.pdf) (two-column version: [`report/report_paper_style.pdf`](report/report_paper_style.pdf)).
+Report: [`report/report_paper_style.pdf`](report/report_paper_style.pdf).
 
 ## Running it
 
@@ -20,7 +20,7 @@ Windows (PowerShell, needs WSL with Ubuntu) or Linux/WSL (bash). The first comma
 | Live bat demo | `.\run.bat bat` | `bash run.sh bat` |
 | Tests | `.\run.bat test` | `bash run.sh test` |
 | Videos | `.\run.bat videos` | `bash run.sh videos` |
-| Report PDFs | `.\run.bat report` | `bash run.sh report` |
+| Report PDF | `.\run.bat report` | `bash run.sh report` |
 | Everything from scratch (3 to 6 min) | `.\run.bat all` | `bash run.sh all` |
 
 Setup installs missing system tools (Python, ffmpeg, LaTeX, git-lfs), the pinned packages from
@@ -36,7 +36,7 @@ data/digitized/ six human data points read from Weiss et al. Fig. 4d
 results/        numbers.json and CSVs written by the scripts
 figures/        figures (PDF and PNG)
 videos/         the three simulation videos
-report/         main.tex (one column), paper.tex (two columns), refs.bib, numbers.tex (generated)
+report/         paper.tex, refs.bib, numbers.tex (generated), report_paper_style.pdf
 ```
 
 ## Papers and data
