@@ -1,0 +1,21 @@
+{
+ "rssNonpredictive": 3.1061,
+ "rssFixed": 0.9858,
+ "shiftFixed": 10.2695,
+ "rssVelocity": 0.8866,
+ "rssPredictive": 0.1458,
+ "shiftPredictive": 6.241,
+ "kPredictive": 5,
+ "kVelocity": 2,
+ "nBL": 97,
+ "nOL": 62,
+ "leadT": 4.06,
+ "leadDf": 97,
+ "leadR": 0.3811,
+ "rssOccNonpredictive": 4.4234,
+ "rssOccPredictive": 0.4137,
+ "chgOMFAfterNonpredictive": 0.047,
+ "chgOMFAfterPredictive": 3.3818,
+ "chgOMSAfterNonpredictive": 0.2852,
+ "chgOMSAfterPredictive": 0.4733
+}

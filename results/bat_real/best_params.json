@@ -1,0 +1,32 @@
+{
+ "nonpredictive": {
+  "k": null,
+  "lam": null,
+  "shift": 0.0
+ },
+ "fixed": {
+  "k": null,
+  "lam": null,
+  "shift": 0.27055672423397076
+ },
+ "velocity": {
+  "k": 2.0,
+  "lam": null,
+  "shift": 0.0
+ },
+ "predictive": {
+  "k": 5.0,
+  "lam": null,
+  "shift": 0.16938088786693717
+ },
+ "ours": {
+  "k": 5.0,
+  "lam": 0.0,
+  "shift": 0.1710053474808339
+ },
+ "ours_noprior": {
+  "k": 5.0,
+  "lam": 0.0,
+  "shift": 0.1710053474808339
+ }
+}
